@@ -149,3 +149,23 @@
   bottom: 320px;
   right: 0;
 }
+
+@media only screen and (max-width: 600px) {
+  .video {
+    position: absolute;
+    z-index: 30;
+    height: 50px;
+    width: 80px;
+    left: 43px;
+    top: 130px;
+  }
+
+  .stage {
+    position: absolute;
+    z-index: 27;
+    left: 0;
+    top: 50px;
+    width: 170px;
+    height: 200px;
+  }
+}

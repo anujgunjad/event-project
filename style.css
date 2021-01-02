@@ -137,3 +137,23 @@
   bottom: 320px;
   right: 0;
 }
+
+@media only screen and (max-width: 600px) {
+  .video {
+    position: absolute;
+    z-index: 30;
+    height: 80px;
+    width: 160px;
+    left: 30%;
+    top: 420px;
+  }
+
+  .stage {
+    position: absolute;
+    z-index: 27;
+    left: 10%;
+    top: 320px;
+    width: 340px;
+    height: 270px;
+  }
+}
