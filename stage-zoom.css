@@ -239,4 +239,15 @@ header {
     width: 920px;
     height: 600px;
   }
+  iframe {
+    width: 380px;
+    top: -95%;
+  }
+  .stage1 {
+    width: 800px;
+    top: -230%;
+  }
+  .platform {
+    width: 700px;
+  }
 }
