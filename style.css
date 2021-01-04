@@ -252,13 +252,14 @@ header {
   .welcome_heading {
     position: absolute;
     z-index: 28;
+    top: 10%;
     font-size: 220px;
     color: white;
   }
 }
 @media only screen and (max-width: 600px) {
   .floor {
-    margin-top: 44vh;
+    margin-top: 53vh;
   }
   .floor_container {
     width: 450px;
@@ -275,7 +276,7 @@ header {
     height: 140px;
   }
   .road {
-    width: 850px;
+    width: 920px;
     height: 600px;
   }
 }
