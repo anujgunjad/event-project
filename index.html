@@ -9,7 +9,7 @@
 <body>
     <div class="main__body">
         <header>
-            <h class="welcome_heading">WELCOME</h>
+              <h class="welcome_heading">WELCOME</h>
         </header>
       
         <img src='./img/build.png' class='building' alt=''>
@@ -18,6 +18,7 @@
         <div class="floor">
             <div class="floor_container">
                 <span class="stage1_container">
+                    
                     <img src='./img/stage.png' class='stage1' alt=''>
                     <img src='./img/platform.png' class='platform' alt=''>
                     <img src='./img/gate.png' class='gate' alt=''>
@@ -46,3 +47,9 @@
     </div>
 </body>
 </html>
+<script>
+    const x = document.querySelector('.stage1_container');
+    x.addEventListener('click', function(e){
+        window.open('./stage-zoom.html',"_self")
+    });
+</script>

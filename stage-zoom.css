@@ -1,108 +1,166 @@
 * {
   margin: 0;
   padding: 0;
-  height: 100%;
 }
+
 .main__body {
   width: 100%;
   height: 100vh;
   position: relative;
   overflow: hidden;
 }
-.main__body:after {
-  content: '';
+iframe {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.05);
-  z-index: 25;
+  z-index: 99;
+  width: 540px;
+  height: 220px;
+  top: -84%;
+}
+header {
+  display: flex;
+  justify-content: center;
 }
 
-.stage__container {
+.welcome_heading {
   position: absolute;
-  zoom: 2.5;
+  z-index: 28;
+  font-size: 300px;
+  color: white;
+}
+
+.road {
+  position: absolute;
+  top: 100%;
+  width: 690px;
+  height: 600px;
+  z-index: 37;
+}
+
+.stage1_container {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.platform {
+  position: absolute;
+  width: 1300px;
   z-index: 40;
+  top: -72%;
+  height: 632px;
 }
 
-.video {
+.stage1 {
   position: absolute;
-  z-index: 30;
-  height: 80px;
-  width: 160px;
-  left: 218px;
-  top: 130px;
+  width: 1200px;
+  height: 800px;
+  z-index: 42;
+  top: -200%;
 }
 
-.stage {
+.floor {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 53vh;
+}
+
+.floor_container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 38;
+  width: 100%;
+  height: 260px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.building {
   position: absolute;
-  z-index: 27;
-  width: 340px;
-  top: 30px;
-  left: 130px;
-  height: 270px;
+  width: 570px;
+  height: 180px;
+  bottom: 420px;
+  z-index: 28;
+}
+
+.building1 {
+  position: absolute;
+  width: 570px;
+  height: 180px;
+  bottom: 420px;
+  z-index: 28;
+  left: 576px;
+}
+
+.building2 {
+  position: absolute;
+  width: 570px;
+  height: 180px;
+  bottom: 420px;
+  z-index: 28;
+  left: 976px;
 }
 
 .ground {
   position: absolute;
-  width: 1400px;
+  width: 2200px;
   bottom: 0px;
+  height: 1000px;
   right: 0;
-  zoom: 2;
   z-index: 16;
 }
 
 .mount1 {
   position: absolute;
-  width: 1670px;
-  height: 500px;
-  bottom: 160px;
+  width: 1070px;
+  height: 360px;
+  bottom: 360px;
   left: -70px;
   z-index: 20;
 }
 
 .mount2 {
   position: absolute;
-  width: 1440px;
-  height: 400px;
-  bottom: 220px;
+  width: 1100px;
+  height: 260px;
+  bottom: 370px;
   right: 0;
   z-index: 17;
 }
 
 .cloud {
   position: absolute;
-  width: 340px;
-  height: 200px;
-  z-index: 15;
+  width: 300px;
+  height: 180px;
+  z-index: 12;
   top: 20px;
   animation: animate 60s linear infinite;
 }
 
 .cloud2 {
   position: absolute;
-  width: 340px;
-  height: 200px;
-  z-index: 15;
+  width: 300px;
+  height: 180px;
+  z-index: 12;
   top: 10%;
   animation: animate2 40s linear infinite;
 }
 
 .cloud3 {
   position: absolute;
-  width: 340px;
-  height: 200px;
-  z-index: 15;
+  width: 300px;
+  height: 180px;
+  z-index: 12;
   top: 10%;
   animation: animate3 60s linear infinite;
 }
 
 .cloud4 {
   position: absolute;
-  width: 340px;
-  height: 200px;
-  z-index: 35;
+  width: 300px;
+  height: 180px;
+  z-index: 12;
   top: 5%;
   animation: animate4 40s linear infinite;
 }
@@ -149,23 +207,36 @@
   bottom: 320px;
   right: 0;
 }
-
-@media only screen and (max-width: 600px) {
-  .video {
+@media only screen and (max-width: 1225px) {
+  .tree_container {
+    display: none;
+  }
+  .welcome_heading {
     position: absolute;
-    z-index: 30;
-    height: 50px;
-    width: 80px;
-    left: 43px;
-    top: 130px;
+    z-index: 28;
+    top: 10%;
+    font-size: 220px;
+    color: white;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .floor {
+    margin-top: 53vh;
+  }
+  header {
+    display: none;
+  }
+  .floor_container {
+    width: 450px;
+    height: 230px;
   }
 
-  .stage {
-    position: absolute;
-    z-index: 27;
-    left: 0;
-    top: 50px;
-    width: 170px;
-    height: 200px;
+  .gate {
+    width: 140px;
+    height: 140px;
+  }
+  .road {
+    width: 920px;
+    height: 600px;
   }
 }
