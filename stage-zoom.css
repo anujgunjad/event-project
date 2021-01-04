@@ -240,14 +240,15 @@ header {
     height: 600px;
   }
   iframe {
-    width: 380px;
-    top: -95%;
+    width: 230px;
+    top: -93%;
   }
   .stage1 {
-    width: 800px;
-    top: -230%;
+    width: 500px;
+    top: -220%;
   }
   .platform {
-    width: 700px;
+    width: 540px;
+    top: -70%;
   }
 }
