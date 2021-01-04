@@ -1,42 +1,150 @@
 * {
   margin: 0;
   padding: 0;
-  height: 100%;
 }
+
 .main__body {
   width: 100%;
   height: 100vh;
   position: relative;
   overflow: hidden;
 }
-
-.navigation {
+header {
+  display: flex;
+  justify-content: center;
+}
+.welcome_heading {
   position: absolute;
-  z-index: 50;
+  z-index: 28;
+  font-size: 300px;
+  color: white;
 }
 
-.video {
-  position: absolute;
-  z-index: 30;
-  height: 80px;
-  width: 160px;
-  left: 664px;
-  top: 470px;
+.tree_container {
+  width: 100%;
 }
 
-.stage {
+.tree1_container {
+  width: 100%;
   position: absolute;
-  z-index: 27;
-  left: 580px;
-  top: 370px;
-  width: 340px;
-  height: 270px;
+  z-index: 44;
+  top: 35%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tree2 {
+  top: 39%;
+  width: 400px;
+  height: 350px;
+  z-index: 44;
+}
+
+.tree {
+  top: 39%;
+  width: 400px;
+  height: 350px;
+  z-index: 44;
+}
+
+.stage2 {
+  width: 320px;
+}
+
+.stage2_container {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  top: -40%;
+}
+
+.road {
+  position: absolute;
+  top: 100%;
+  width: 690px;
+  height: 600px;
+  z-index: 37;
+}
+
+.gate {
+  position: absolute;
+  top: 39%;
+  width: 170px;
+  height: 140px;
+  z-index: 44;
+}
+
+.stage1_container {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.platform {
+  position: absolute;
+  width: 280px;
+  z-index: 40;
+  top: -32%;
+}
+
+.stage1 {
+  position: absolute;
+  width: 280px;
+  height: 200px;
+  z-index: 42;
+  top: -60%;
+}
+
+.floor {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 52vh;
+}
+
+.floor_container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 38;
+  width: 950px;
+  height: 230px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.building {
+  position: absolute;
+  width: 570px;
+  height: 180px;
+  bottom: 420px;
+  z-index: 28;
+}
+
+.building1 {
+  position: absolute;
+  width: 570px;
+  height: 180px;
+  bottom: 420px;
+  z-index: 28;
+  left: 576px;
+}
+
+.building2 {
+  position: absolute;
+  width: 570px;
+  height: 180px;
+  bottom: 420px;
+  z-index: 28;
+  left: 976px;
 }
 
 .ground {
   position: absolute;
   width: 2200px;
   bottom: 0px;
+  height: 1000px;
   right: 0;
   z-index: 16;
 }
@@ -44,8 +152,8 @@
 .mount1 {
   position: absolute;
   width: 870px;
-  height: 280px;
-  bottom: 200px;
+  height: 260px;
+  bottom: 360px;
   left: -70px;
   z-index: 20;
 }
@@ -53,44 +161,44 @@
 .mount2 {
   position: absolute;
   width: 1100px;
-  height: 280px;
-  bottom: 220px;
+  height: 260px;
+  bottom: 370px;
   right: 0;
   z-index: 17;
 }
 
 .cloud {
   position: absolute;
-  width: 340px;
-  height: 200px;
-  z-index: 30;
+  width: 300px;
+  height: 180px;
+  z-index: 12;
   top: 20px;
   animation: animate 60s linear infinite;
 }
 
 .cloud2 {
   position: absolute;
-  width: 340px;
-  height: 200px;
-  z-index: 35;
+  width: 300px;
+  height: 180px;
+  z-index: 12;
   top: 10%;
   animation: animate2 40s linear infinite;
 }
 
 .cloud3 {
   position: absolute;
-  width: 340px;
-  height: 200px;
-  z-index: 35;
+  width: 300px;
+  height: 180px;
+  z-index: 12;
   top: 10%;
   animation: animate3 60s linear infinite;
 }
 
 .cloud4 {
   position: absolute;
-  width: 340px;
-  height: 200px;
-  z-index: 35;
+  width: 300px;
+  height: 180px;
+  z-index: 12;
   top: 5%;
   animation: animate4 40s linear infinite;
 }
@@ -137,23 +245,37 @@
   bottom: 320px;
   right: 0;
 }
-
-@media only screen and (max-width: 600px) {
-  .video {
-    position: absolute;
-    z-index: 30;
-    height: 80px;
-    width: 160px;
-    left: 30%;
-    top: 420px;
+@media only screen and (max-width: 1225px) {
+  .tree_container {
+    display: none;
   }
-
-  .stage {
+  .welcome_heading {
     position: absolute;
-    z-index: 27;
-    left: 10%;
-    top: 320px;
-    width: 340px;
-    height: 270px;
+    z-index: 28;
+    font-size: 220px;
+    color: white;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .floor {
+    margin-top: 44vh;
+  }
+  .floor_container {
+    width: 450px;
+    height: 230px;
+  }
+  .stage2 {
+    width: 300px;
+  }
+  .stage2_container {
+    top: -25%;
+  }
+  .gate {
+    width: 140px;
+    height: 140px;
+  }
+  .road {
+    width: 850px;
+    height: 600px;
   }
 }
